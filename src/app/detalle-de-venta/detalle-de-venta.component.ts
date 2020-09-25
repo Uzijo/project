@@ -16,6 +16,7 @@ export class DetalleDeVentaComponent implements OnInit {
     total: 0,
     nombre: "",
     direccion: "",
+    estado: "",
     productos: [],
   };
 

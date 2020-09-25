@@ -17,9 +17,14 @@
       <mat-header-cell *matHeaderCellDef>Precio</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.precio | currency}}</mat-cell>
     </ng-container>
+    <ng-container matColumnDef="estado">
+      <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.estado}}</mat-cell>
+    </ng-container>
     <mat-header-row *matHeaderRowDef="columnas"></mat-header-row>
     <mat-row *matRowDef="let row; columns: columnas;"></mat-row>
   </table>
   <br>
+  <a routerLink="/ventas" mat-raised-button color="accent">Volver</a>
   <a routerLink="/ventas" mat-raised-button color="accent">Volver</a>
 </mat-card>
